@@ -2,6 +2,12 @@
 
 Blockdown is an extension of [Markdown](https://help.github.com/articles/about-writing-and-formatting-on-github/) that enables the creation of feature-rich content with a powerful templating system.
 
+- Lunr search
+- Default Bootstrap template
+- Highlight.js syntax highlighting
+- Github Flavored Markdown
+- Nunjucks tempting 
+
 ## Install
 
 ```
