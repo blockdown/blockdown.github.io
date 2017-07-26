@@ -1,0 +1,34 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Overview\n\n\nBlockdown\n is a writing format that makes it easy to create beautiful, interactive \ncurriculum\n and \ndocumentation\n. It is an extension of \nmarkdown\n, a writing format that uses plain text to add formatting to documents.\n\n\nInstall\n\n\nInstall via npm.\n\n\nnpm install --save blockdown-render\n\n\n\n\n\nRender with JS.\n\n\nrender\n \n=\n \nrequire\n(\nblockdown-render\n)\n\n\n\ndocument\n \n=\n \nrender\n(\nblockdown document\n,\n \n{\n\n    \ndir\n:\n \ntemplate/directory\n,\n\n    \ntemplate\n:\n \ntemplate to insert document into\n\n\n})\n\n\n\n\n\n\nDocuments\n\n\nA Blockdown document uses three dashes \n---\n placed on its own line to separate content into logical \"blocks\".\n\n\nfirst block\n---\nsecond block\n---\n\nthird block\n... and so on ...\n\n\n\n\n\nBlocks\n\n\nA block can begin with any number of \n@key value\n pairs. The key can be any valid JavaScript key, and the value must be a JSON formatted value like \n42\n or \n\"literal string\"\n. Since the value is consumed with \nJSON.parse\n, you can provide any valid JSON as the value for the key.\n\n\n@title \nGetting Started\n\n@template \nget-started\n\n@length 10\n\nThis is how you get started, it should take around ten minutes.\n- do this\n- then this\n- and finally this\n\n---\n@title \nWrite Something!\n\n@length 15\n@standard [\nCCSS.MATH.CONTENT.8.NS.A.1\n, \nK12CS.K\u20132.Impacts of Computing.Social Interactions\n]\n\nThis content aligns with standards, and a template can now link to them.\n\n---\n\nThis is just *markdown with no key-value pairs*.\n\n[link to something](https://anything.com)\n\n\n This is a block quote\n\n\n\n\n\nTemplates\n\n\nTemplates are rendered with \nNunjucks", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#overview", 
+            "text": "Blockdown  is a writing format that makes it easy to create beautiful, interactive  curriculum  and  documentation . It is an extension of  markdown , a writing format that uses plain text to add formatting to documents.", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/#install", 
+            "text": "Install via npm.  npm install --save blockdown-render  Render with JS.  render   =   require ( blockdown-render )  document   =   render ( blockdown document ,   { \n     dir :   template/directory , \n     template :   template to insert document into  })", 
+            "title": "Install"
+        }, 
+        {
+            "location": "/#documents", 
+            "text": "A Blockdown document uses three dashes  ---  placed on its own line to separate content into logical \"blocks\".  first block\n---\nsecond block\n---\n\nthird block\n... and so on ...", 
+            "title": "Documents"
+        }, 
+        {
+            "location": "/#blocks", 
+            "text": "A block can begin with any number of  @key value  pairs. The key can be any valid JavaScript key, and the value must be a JSON formatted value like  42  or  \"literal string\" . Since the value is consumed with  JSON.parse , you can provide any valid JSON as the value for the key.  @title  Getting Started \n@template  get-started \n@length 10\n\nThis is how you get started, it should take around ten minutes.\n- do this\n- then this\n- and finally this\n\n---\n@title  Write Something! \n@length 15\n@standard [ CCSS.MATH.CONTENT.8.NS.A.1 ,  K12CS.K\u20132.Impacts of Computing.Social Interactions ]\n\nThis content aligns with standards, and a template can now link to them.\n\n---\n\nThis is just *markdown with no key-value pairs*.\n\n[link to something](https://anything.com)  This is a block quote", 
+            "title": "Blocks"
+        }, 
+        {
+            "location": "/#templates", 
+            "text": "Templates are rendered with  Nunjucks", 
+            "title": "Templates"
+        }
+    ]
+}
